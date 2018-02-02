@@ -5,7 +5,7 @@
 def sum arr
   num = 0
   for element in arr do
-    #this next line causes a warning in ruby 2.4.1, fixed in later version
+    #this next line causes a warning in ruby 2.4.1, fixed in a later version
     num = num + element 
   end
   return num
@@ -22,9 +22,9 @@ def max_2_sum arr
   end
 
 =begin  
-  I sort array in ascending order
-  # and then reverse the array so that 
-  #the 2 largest numbers are at the front
+  I sort the array in ascending order
+  and then reverse the array so that 
+  the 2 largest numbers are at the front
 =end
   sorted_arr = arr.sort.reverse
 
@@ -45,8 +45,8 @@ def sum_to_n? arr, n
   end
 
 =begin  
-  Nested for loop comparing each possible sum
-  of 2 elements in the array to n
+  This nested for loop compares n to each 
+  possible sum of 2 elements in the array
 =end
   for i in 0..arr.length - 1
     j = i + 1
@@ -83,7 +83,7 @@ def starts_with_consonant? s
   end
   
   #If the 1st char in s is not a vowel
-  # return true
+  #return true
   if s[0] =~ /[^aeiou]/i
     return true
   else
